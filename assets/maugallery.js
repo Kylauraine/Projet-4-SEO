@@ -57,7 +57,18 @@
       }
     });
 
-    $(".gallery").on("click", ".nav-link", $.fn.mauGallery.methods.filterByTag);
+    // Ajouter un écouteur d'événement au clic sur les liens de catégorie
+    $(".gallery").on("click", ".nav-link", function() {
+      // Supprimer la classe active de tous les liens de catégorie
+      $(".nav-link").removeClass("active");
+
+      // Ajouter la classe active uniquement au lien de catégorie sur lequel l'utilisateur a cliqué
+      $(this).addClass("active");
+
+      // Appeler la fonction de filtrage par tag
+      $.fn.mauGallery.methods.filterByTag.call(this);
+    });
+
     $(".gallery").on("click", ".mg-prev", () =>
       $.fn.mauGallery.methods.prevImage(options.lightboxId)
     );
