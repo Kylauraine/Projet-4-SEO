@@ -10,7 +10,7 @@ body {
 img {
 	max-width: 2500px;
 }
-.top-header {
+header {
 	background-color: white;
 	position: sticky;
 	top:0;
@@ -22,22 +22,22 @@ img {
 	align-items: center;
 }
 
-.top-header .name {
+header .name {
 	font-size: 26px;
 }
 
-.nav ul {
+nav ul {
 	display: flex;
 	list-style-type: none;
 	font-size: 14px;
 	margin-bottom: 0;
 }
 
-.nav li {
+nav li {
 	padding-inline: 10px;
 }
 
-.nav a {
+nav a {
 	text-decoration: none;
 	color: #000
 }
@@ -73,6 +73,7 @@ img {
 
 .picture img {
 	width: 100%;
+	max-width: 600px;
 
 }
 #about-me {
@@ -93,10 +94,11 @@ img {
 	width: 80%;
 	font-size: 14px;
 }
-
+/* 
 #gallery {
 	/*	min-height: 100vh; */
-}
+/* } */
+
 .title{
 	text-align: center;
 	padding-block: 2em;
@@ -126,7 +128,9 @@ img {
 .gallery-item {
 	position: absolute;
 	width: 100%;
+	max-width: 600px;
 	height: 100%;
+	max-height: 600px;
 	object-fit: cover;
 	padding: .5em;
 }
