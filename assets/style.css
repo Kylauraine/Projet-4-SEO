@@ -6,6 +6,11 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
+
+.img {
+	width: 100%;
+	max-width: 2500px;
+}
 .top-header {
 	background-color: white;
 	position: sticky;
