@@ -7,9 +7,6 @@ body {
 	font-style: normal;
 }
 
-img {
-	max-width: 2500px;
-}
 header {
 	background-color: white;
 	position: sticky;
@@ -44,6 +41,7 @@ nav a {
 
 .social-link img {
 	width: 20px;
+	height: 20px;
 }
 
 #about {
@@ -94,10 +92,7 @@ nav a {
 	width: 80%;
 	font-size: 14px;
 }
-/* 
-#gallery {
-	/*	min-height: 100vh; */
-/* } */
+
 
 .title{
 	text-align: center;
