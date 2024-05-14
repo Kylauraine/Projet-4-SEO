@@ -33,8 +33,8 @@
 </head>
 
 <body>
-	<header>
-		<h1 class="name">Nina Carducci</h1>
+	<header itemscope itemtype="https://schema.org/LocalBusiness">
+    <h1 class="name" itemprop="name">Nina Carducci</h1>
 		<nav>   
 			<ul>
 				<li><a href="#about">About</a></li>
@@ -78,9 +78,11 @@
 		</section>
 
 		<section id="about">
-			<div class="picture left">
-				<img src="./assets/images/nina.webp" alt="Nina Carducci">
-			</div>
+			<div class="picture left" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+				<img src="./assets/images/nina.webp" alt="Nina Carducci" itemprop="url">
+				<meta itemprop="width" content="600">
+				<meta itemprop="height" content="600">
+		</div>
 			<article id="about-me">
 				<h2 class="about-me__title">About Me</h2>
 				<div class="about-me__introduction">Becoming a photographer was an easy choice for me. It felt like it was my destiny. Capturing a moment, an emotion, a situation, a place, or a glimmer of light and making them immortal, that’s what drives me.</div>
